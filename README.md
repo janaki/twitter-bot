@@ -6,4 +6,4 @@ I used [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) to scrap
 
 To run, you will need to have a twitter account, and a twitter app enabled with access tockens. Once that this is done you can run the bot: 
 
-```python bots.py```
+```python bots.py <serach teams>```
