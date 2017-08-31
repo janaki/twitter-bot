@@ -34,5 +34,8 @@ for item in soup.find_all('h3', attrs={'class' : 'r'}):
     message = desc +'   '+ shared_link
     tweet = (message[:138] + ' ..') if len(message) > 140 else message
     print "Tweeting the following: "+tweet
-    api.update_status(tweet) 
+    try:
+        status = api.update_status(tweet)
+    except tweepy.error.TweepError:
+        pass
 
